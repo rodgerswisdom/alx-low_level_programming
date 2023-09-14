@@ -1,3 +1,7 @@
+
+We're moving to Discord!
+In a few days, we will be leaving Slack in favor of Discord 🎉
+Click here for more information
 0x10. C - Variadic functions
 C
  By: Julien Barbier
@@ -189,4 +193,4 @@ GitHub repository: alx-low_level_programming
 Directory: 0x10-variadic_functions
 File: 3-print_all.c
    
-
+Copyright © 2023 ALX, All rights reserved.
