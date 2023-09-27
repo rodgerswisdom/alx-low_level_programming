@@ -2,8 +2,9 @@
 #include "lists.h"
 
 /**
- * sum_listint - calculate the sum of all the data 
-  * Return: sum
+ * sum_listint - calculate the sum of all the data
+ * @head: pointer to head node
+ * Return: sum
  */
 int sum_listint(listint_t *head)
 {
