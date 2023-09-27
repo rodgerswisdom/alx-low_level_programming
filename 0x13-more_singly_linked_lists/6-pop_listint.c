@@ -2,7 +2,8 @@
 
 /**
  * pop_listint - deletes the head node of a linked list
-  * Return: info inside the elements that were removed,
+ * @head: pointer to head node
+ * Return: info inside the elements that were removed,
  */
 int pop_listint(listint_t **head)
 {
@@ -14,7 +15,7 @@ int pop_listint(listint_t **head)
 
 	number = (*head)->n;
 
-	temps= (*head)->next;
+	temps = (*head)->next;
 
 	free(*head);
 

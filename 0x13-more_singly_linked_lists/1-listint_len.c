@@ -9,13 +9,14 @@
  */
 size_t listint_len(const listint_t *h)
 {
-    size_t count = 0; 
+	size_t count = 0;  /* Initialize a counter to zero */
 
-    while (h != NULL)
-    {
-        count++;       
-        h = h->next;       }
+	while (h != NULL)
+	{
+		count++;        /* Increment the count */
+		h = h->next;    /* Move to the next element */
+	}
 
-    return (count);
+	return (count);
 }
 
