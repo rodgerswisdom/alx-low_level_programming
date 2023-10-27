@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _prime_finder - A functions that finds prime number
  * @n: The number to evaluate if prime
