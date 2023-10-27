@@ -5,7 +5,7 @@
  * @guess : the squaroot guess
  * 
  * Return : the squaroot, -1 if none
- * */
+ */
 int _sqrt_finder(int n, int guess)
 {
 	if (guess * guess == n)
@@ -16,7 +16,7 @@ int _sqrt_finder(int n, int guess)
 	{
 		return (-1);
 	}
-	return (_sqrt_finder (n, guess + 1));
+	return (_sqrt_finder(n, guess + 1));
 }
 /**
  * _sqrt_recursion - A function that returns the square root of n
