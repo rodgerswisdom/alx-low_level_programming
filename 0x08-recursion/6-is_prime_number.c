@@ -15,11 +15,11 @@ int _prime_finder(int n, int div)
 	{
 		return (1);
 	}
-	if ( n % div == 0 )
+	if (n % div == 0)
 	{
 		return (0);
 	}
-	return ( _prime_finder(n, div - 1));
+	return (_prime_finder(n, div - 1));
 }
 /**
  * is_prime_number - A function that returns 1, if prime and 0 if not prime
