@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *_sqrt_finder - A function that find square root
- *@n : the number for which the square root is found
- * @guess : the squaroot guess
- * Return : the squaroot, -1 if none
+ * _sqrt_finder - A function that find square root
+ * @n: the number for which the square root is found
+ * @guess: the squaroot guess
+ * Return: the squaroot, -1 if none
  */
 int _sqrt_finder(int n, int guess)
 {
@@ -19,8 +19,8 @@ int _sqrt_finder(int n, int guess)
 }
 /**
  * _sqrt_recursion - A function that returns the square root of n
- * @n : the number for which its square root is returned
- * Return : natural square root
+ * @n: the number for which its square root is returned
+ * Return: natural square root
  */
 int _sqrt_recursion(int n)
 {
