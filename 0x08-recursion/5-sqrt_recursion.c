@@ -3,7 +3,6 @@
  *_sqrt_finder - A function that find square root
  *@n : the number for which the square root is found
  * @guess : the squaroot guess
- * 
  * Return : the squaroot, -1 if none
  */
 int _sqrt_finder(int n, int guess)
