@@ -2,7 +2,12 @@
 #include <stdlib.h>
 /**
  * main - main function
- *
+ * @cents: variable
+ * @num_coins: variable
+ * @coins: variable
+ * @i: iterator
+ * @argc: commands
+ * @argv: array of pointers
  * Return: 0 on success, 1 on error
  */
 int main(int argc, char *argv[])
