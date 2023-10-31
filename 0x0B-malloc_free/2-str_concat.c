@@ -41,6 +41,7 @@ char *str_concat(char *s1, char *s2)
  *
  * Return: always 0
  */
+/**
 int main(void)
 {
 	char *s;
@@ -54,5 +55,5 @@ int main(void)
 	printf("%s\n", s);
 	free(s);
 	return (0);
-}
+}*/
 
