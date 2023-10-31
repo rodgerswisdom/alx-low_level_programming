@@ -10,12 +10,14 @@
  */
 char *argstostr(int ac, char **av)
 {
-	if (ac == 0 || av == NULL)
-		return (NULL);
 
 	int total_length = 0;
 	int i, j;
 	char *concatenated;
+	int index = 0;
+
+	if (ac == 0 || av == NULL)
+		return (NULL);
 
 	for (i = 0; i < ac; i++)
 	{
@@ -27,7 +29,6 @@ char *argstostr(int ac, char **av)
 	concatenated = (char *)malloc(total_length * sizeof(char));
 	if (concatenated == NULL)
 		return (NULL);
-	int index = 0;
 
 	for (i = 0; i < ac; i++)
 	{
