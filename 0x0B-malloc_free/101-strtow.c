@@ -37,3 +37,52 @@ char **strtow(char *str)
 	words[i] = NULL;
 	return (words);
 }
+int is_space(char c)
+{
+	return (c == ' ' || c == '\t' || c == '\n');
+}
+int word_count(char *str)
+{
+	int count = 0;
+	int in_word = 0;
+
+	while (*str)
+	{
+		if (is_space(*str) && in_word)
+			in_word = 0;
+		else if (!is_space(*str) && !in_word)
+		{
+			in_word = 1;
+			count++;
+		}
+		str++;
+	}
+	return (count);
+}
+char **allocate_memory(char *str, int count)
+{
+	int j = 0;
+	int i = 0;
+	char **words = malloc((count + 1) * sizeof(char *));
+	if (words == NULL)
+		return (NULL);
+	for (i = 0; i < count; i++)
+	{
+		while (is_space(*str))
+			str++;
+		while (!is_space(*str))
+		{
+			str++;
+			j++;
+		}
+		words[i] = malloc((j + 1) * sizeof(char));
+		if (words[i] == NULL)
+		{
+			for (int k = 0; k < i; k++)
+				free(words[k]);
+			free(words);
+			return (NULL);
+		}
+	}
+	return (words);
+}
