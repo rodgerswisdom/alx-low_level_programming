@@ -21,12 +21,12 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		 for (j = 0; av[i][j] != '\0'; j++)
-			 total_length++;
-		 total_length++;
+		for (j = 0; av[i][j] != '\0'; j++)
+			total_length++;
+		total_length++;
 	}
 
-	concatenated = (char *)malloc(total_length * sizeof(char)+1);
+	concatenated = (char *)malloc(total_length * sizeof(char) + 1);
 	if (concatenated == NULL)
 		return (NULL);
 
