@@ -35,4 +35,24 @@ char *str_concat(char *s1, char *s2)
 
 	return (concat);
 }
+/**
+ * main - main function
+ * @s: string
+ *
+ * Return: always 0
+ */
+int main(void)
+{
+	char *s;
+
+	s = str_concat("Betty ", "Holberton");
+	if (s == NULL)
+	{
+		printf("failed\n");
+		return (1);
+	}
+	printf("%s\n", s);
+	free(s);
+	return (0);
+}
 
