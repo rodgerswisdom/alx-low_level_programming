@@ -3,7 +3,7 @@
 /**
  * _strdup - duplicate a string
  * @str: input
- * 
+ *
  * Return: pointer or NULL
  */
 char *_strdup(char *str)
@@ -11,6 +11,7 @@ char *_strdup(char *str)
 	char *duplicate;
 	unsigned int length = 0;
 	unsigned int i;
+
 	if (str == NULL)
 		return (NULL);
 	while (str[length] != '\0')
@@ -20,5 +21,5 @@ char *_strdup(char *str)
 		return (NULL);
 	for (i = 0; i <= length; i++)
 		duplicate[i] = str[i];
-	return duplicate;
+	return (duplicate);
 }
