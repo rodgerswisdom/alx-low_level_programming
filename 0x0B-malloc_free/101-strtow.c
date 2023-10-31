@@ -63,7 +63,9 @@ char **allocate_memory(char *str, int count)
 {
 	int j = 0;
 	int i = 0;
+	int k;
 	char **words = malloc((count + 1) * sizeof(char *));
+
 	if (words == NULL)
 		return (NULL);
 	for (i = 0; i < count; i++)
@@ -78,7 +80,7 @@ char **allocate_memory(char *str, int count)
 		words[i] = malloc((j + 1) * sizeof(char));
 		if (words[i] == NULL)
 		{
-			for (int k = 0; k < i; k++)
+			for (k = 0; k < i; k++)
 				free(words[k]);
 			free(words);
 			return (NULL);
