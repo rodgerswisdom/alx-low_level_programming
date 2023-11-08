@@ -7,6 +7,7 @@
  * @owner: pointer to owner
  *
  * Description: Structure of a dog
+ */
 struct dog
 {
 	char *name;
