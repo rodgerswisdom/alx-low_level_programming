@@ -1,30 +1,41 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
+#include "headers.h"
+
+/**
+  * Create a node
+  * traverse a list
+  * Add a node between , at the end, begining
+  * number of nodes
+*/
 struct node{
+	int data;
+	
 	struct node *prev;
 	struct node *next;
 };
 
-int main()
+int create_doubly_linked_list(struct node head)
 {
-
-	
-	struct node mynode;
-	
-	if(mynode.prev == NULL && mynode.next == NULL)
+	if(head.next != NULL)
 	{
-		struct node *prev = &mynode;
-		struct node *next = NULL;
-		
-		printf("New node with created\n");
+		head.next == struct node next_node;
+		printf("List created\n");
 	}
 	else
-		printf("Node exists\n");
+		printf("List not created\n");
 	
+	return (0);
+}
+
+int main()
+{
+	struct node head;
+	head->prev == NULL;
 	
-	
-	
+	create_doubly_linked_list(struct node head);
 	
 	return (0);
 }
